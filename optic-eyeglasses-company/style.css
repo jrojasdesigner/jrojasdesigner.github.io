@@ -1,0 +1,354 @@
+/* reset rules */
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+} 
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+/* font family */
+html{
+font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Standard link */
+a:link {
+  text-decoration: none;
+}
+
+/*** text highlight ***/
+/** Works on common browsers **/
+::selection {
+    background-color: #FF7A84;
+    color: white;
+}
+
+/** Mozilla based browsers **/
+::-moz-selection {
+    background-color: #FF7A84;
+    color: white;
+}
+
+/** For Other Browsers **/
+::-o-selection {
+    background-color: #FF7A84;
+    color: white;
+}
+
+::-ms-selection {
+    background-color: #FF7A84;
+    color: white;
+}
+
+/** For Webkit **/
+::-webkit-selection {
+    background-color: #FF7A84;
+    color: white;
+}
+
+/* sections */
+.container{
+    margin-top: -113px;
+}
+
+.main-box{
+    padding-bottom: 84px;
+    background-color: #197A84;
+}
+
+.landing{
+    margin-top: 45px;
+    background-color: aqua;
+}
+
+.shopping-box{
+    background-color: white;
+}
+
+.footer-box{
+    background-color: #E6E6E6;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-weight: 500;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    padding: 0px 15px 2px 15px;
+}
+
+.open-btn {
+    font-size: 2.1em;
+    font-weight: 900;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    padding: .5em .75em;
+    border: none;
+}
+
+.open-btn:hover {
+    background-color: white;
+    color: #197A84;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#x-button{
+    font-weight: 400;
+}
+
+#x-button:hover {
+    background-color: lightgray;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+      padding-top: 15px;
+    }
+    
+    .sidebar a {
+      font-size: 18px;
+    }
+}
+
+.active {
+    background-color: lightgray;
+}
+
+
+/* responsive storefront 2 column grid */
+.responsive-2-col{
+    float: left;
+    width: 50%;
+    margin-bottom: -4px;
+}
+
+@media only screen and (max-width: 900px) {
+    .responsive-2-col {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .responsive-2-col {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.responsive-margin{
+    margin-bottom: 110px;
+}
+
+/* responsive product photo grid */
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+div.gallery {
+    border: .1px solid cyan;
+}
+
+div.descript {
+    padding-top: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* logo */
+div.logo{
+    max-width: 696px;
+    margin: auto;
+    padding: 134px 16px 0px 16px;
+}
+
+img.logo{
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.home{
+    background-image: url(images/logo-black.svg);
+    background-position: center;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 120px;
+    margin: 0px 0px 25px 34px;
+}
+
+#home:hover{
+    background-color: rgba(0,0,0,0);
+}
+
+/* shop buttons */
+.shop-container{
+    height: 62px;
+    max-width: 400px;
+    min-width: 300px;
+    margin: auto;
+}
+
+.shop{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #197A84;
+    margin-top: 82px;
+    border-radius: 30px;
+    display: table;
+}
+
+.shop:hover{
+    background-color: #125659;
+    color: white;
+}
+
+.shop-font{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 500;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+
+/* glasses images */
+img.glasses{
+    width: 100%;
+}
+
+/* footer stuff */
+.sub-footer{
+    min-width: 400px;
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 0 0 80px;
+}
+
+.footer-links{
+    width: 260px;
+    float: left;
+    margin: 0 0 20px 30px;
+    clear: right;
+}
+
+.p-footer-link{
+    color: black;
+    font-size: 12pt;
+    line-height: 1.7em;
+    clear: both;
+    float: left;
+}
+
+.p-footer-link:hover{
+    color: #197A84;
+    font-size: 1.03em;
+}
+
+.sub-footer-end{
+    width: 100%;
+    height: 160px;
+    display: inline-block;
+}
+
+.copyright{
+    float: left;
+    margin: 40px 0 0 2%;
+}
+
+.top-button{
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 136px;
+    border-radius: 30px;
+    float: right;
+    margin: 30px 16px 0 0;
+    display: table;
+}
+
+.top-button:hover{
+    background-color: #197A84;
+    color: white;
+}
+
+.top-button-text{
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
