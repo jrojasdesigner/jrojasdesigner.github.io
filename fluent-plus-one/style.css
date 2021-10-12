@@ -1,0 +1,532 @@
+/* fonts, type */
+@font-face{
+font-family: "Mosk";
+src: url("fonts/Mosk Ultra-Bold 900.ttf") format("truetype");
+}
+
+h1, h3{
+    font-family: "Mosk";
+}
+
+h1{
+    font-size: 76pt;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.3);
+}
+
+h3{
+    font-size: 39.5pt;
+}
+
+h2, h4, h5, h6, p{
+    font-family: "Montserrat", sans-serif;
+}
+
+h2{
+    font-size: 38pt;
+    font-weight: 600;
+    line-height: 1.1em;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+h4{
+    font-size: 29pt;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 14pt;
+    font-weight: 600;
+    clear: both;
+    float: left;
+}
+
+h1, h2, .description-main{
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+ .font-description-main{
+     font-size: 17pt;
+     text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.p-description{
+    font-size: 17pt;
+    line-height: 2em;
+}
+
+/* links */
+a:link {
+  text-decoration: none;
+}
+            
+a:hover {
+  color: black;
+}
+            
+a:active {
+  color: white;
+}
+            
+a:visited {
+  color: white;
+}
+
+/* reset everything */
+html, body{
+    margin: 0;
+    padding: 0;
+} 
+
+html{
+ overflow: auto;   
+}
+
+body{
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+/* more images */
+.phone-app{
+    width: 100%;
+}
+
+.difficulty-icons{
+    width: 100%;
+}
+
+/* navigation, buttons */
+.nav{
+    background-color: #CC5A73;
+    width: 100%;
+    height: 59px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    /* transition: top 0.3s;  Transition effect when sliding down (and up) */
+}
+
+.logo{
+    background-size: 95px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/logo.svg");
+    height: 45px;
+    width: 95px;
+    float: left;
+    margin: 7px 0 7px 16.2px;
+}
+
+.login{
+    background-color: #D8F58E;
+    font-weight: 600;
+    font-size: 12pt;
+    height: 26.6px;
+    width: 67.5px;
+    border-radius: 6.5px;
+    float: right;
+    margin: 16.2px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.login:hover{
+    background-color: #effbd0;
+}
+
+.start{
+    width: 100%;
+    height: 87px;
+    border-radius: 22px;
+    background-color: #D8F58E;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 28pt;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.start:hover{
+    background-color: #effbd0;
+}
+
+.intro{
+    margin-top: 27px;
+    min-width: 200px;
+    max-width: 460px;
+    z-index: 2;
+}
+
+.end{
+    min-width: 200px;
+    max-width: 460px;
+    top: 47px;
+    z-index: 11;
+
+}
+
+.button-text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.login, .start, .logo{
+    display: table;
+}
+
+
+/* text color */
+.login, .start{
+    color: #CC5A73;
+}
+
+
+/* main body container divisions */
+.container{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 59px;
+}
+
+.bubbles{
+    height: 860px;
+    width: 100%;
+    background-image: url("images/intro.svg");
+    background-size: 1670px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -14px;
+    z-index: 1;
+}
+
+.bubbles-2{
+    height: 354px;
+    width: 100%;
+    background-image: url("images/end.svg");
+    background-size: 1092px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    top: -200px;
+}
+
+.body-1{
+    height: 558px;
+    width: 100%;
+    background-color: #E8657C;
+    background-size: 1670px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -14px;
+    z-index: 3;
+    position: relative;
+    top: 14px;
+}
+
+.body-2{
+    min-height: 540px;
+    max-height: 2000px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    top: 200px;
+    z-index: 2;
+    display: inline-block;
+}
+
+.body-3{
+    min-height: 860px;
+    max-height: 2000px;
+    width: 100%;
+    background-color: #E5D1D6;
+    position: relative;
+    top: 200px;
+    z-index: 2;
+    display: inline-block;
+}
+
+.body-4{
+    height: 180px;
+    width: 100%;
+    background-color: #E8657C;
+    position: relative;
+    top: 150px;
+    z-index: 2;
+    display: inline-block;
+}
+
+.body-5{
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+.sub-container{
+    min-width: 400px;
+    max-width: 870px;
+    margin: auto;
+}
+
+.sub-nav{
+    min-width: 360px;
+    max-width: 870px;
+    margin: auto;
+}
+
+.sub-footer{
+    min-width: 400px;
+    max-width: 870px;
+    margin: auto;
+}
+
+.sub-footer-end{
+    width: 100%;
+    height: 185px;
+    display: inline-block;
+}
+
+/* main body */
+.heading-main{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    line-height: 5.8em;
+}
+
+.sub-heading-main{
+    margin-top: 9px;
+}
+
+.description-main{
+    min-width: 100px;
+    max-width: 430px;
+    margin: auto;
+    margin-top: 13px;
+    text-align: left;
+    line-height: 2em;
+}
+
+.description{
+    max-width: 460px;
+    min-width: 50px;
+    margin: 0 2% 35px 2%;
+}
+
+.description-1{
+    position: relative;
+    top: 120px;
+    float: left;
+}
+
+.description-2{
+    position: relative;
+    top: 150px;
+    float: right;
+}
+
+.side-image{
+    width: 340px;
+    margin: 0 2%;
+}
+
+.side-image-1{
+    height: 500px;
+    position: relative;
+    top: 90px;
+    float: left;
+}
+
+.side-image-2{
+    height: 600px;
+    position: relative;
+    top: 120px;
+    float: right;
+}
+
+.footer-links{
+    width: 260px;
+    float: left;
+    margin: 0 2% 0 2%;
+}
+
+.p-footer-link{
+    color: black;
+    font-size: 12pt;
+    line-height: 1.7em;
+    clear: both;
+    float: left;
+}
+
+.p-footer-link:hover{
+    color: #e8657c;
+}
+
+.copyright{
+    width: 120px;
+    float: left;
+    margin: 55px 0 0 2%;
+    font-size: 14pt;
+}
+
+.top-button{
+    background-color: white;
+    font-weight: 600;
+    color: black;
+    font-size: 14pt;
+    height: 32px;
+    width: 136px;
+    border-radius: 6.5px;
+    float: right;
+    margin: 50px 16px 0 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    display: table;
+}
+
+.top-button:hover{
+    color: #CC5A73;
+    height: 34px;
+    width: 138px;
+    font-size: 14.25pt;
+    margin: 49px 15px 0 0;
+    box-shadow: 0 3px 13px rgba(0,0,0,0.2);
+}
+
+.top-button-text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Dropdown Button */
+.down-arrow{
+    height: 19px;
+    width: 11px;
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/dropdown-arrow.svg");
+    float: right;
+    margin-right: 7px;
+    margin-left: -1px;
+}
+
+.dropbtn {
+    background-color: #CC5A73;
+    height: 26.6px;
+    width: 155px;
+    color: #D8F58E;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6.5px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11pt;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #E8657C;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-language {
+    position: relative;
+    height: 26.6px;
+    float: right;
+    margin: 16.2px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11pt;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 8px;
+    top: 30px;
+    background-color: #f1f1f1;
+    min-width: 110px;
+    box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px 0 0 5px;
+    height: 496px;
+    overflow: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #CC5A73;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: white;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.06);
+
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}
+
+/* remove blue outline when clicking on dropdown button (hover & focus) */
+.dropbtn:active,
+.dropbtn:focus,
+.dropbtn.active {
+  outline: 0;
+}
+
+
+/* text highlight color */
+
+/*** Works on common browsers ***/
+::selection {
+    background-color: #6f1122;
+    color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: #6f1122;
+    color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: #6f1122;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: #6f1122;
+    color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: #6f1122;
+    color: #fff;
+}
